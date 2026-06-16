@@ -25,8 +25,10 @@ header .meta { margin-top:18px; display:inline-flex; gap:18px; flex-wrap:wrap; j
   box-shadow:0 4px 16px rgba(30,58,138,.06); }
 .card-header { display:flex; align-items:center; gap:14px; padding:18px 24px; border-bottom:1px solid #eef1f6;
   background:#fafbfe; }
-.logo { width:46px; height:46px; border-radius:12px; background:#eef4ff; display:flex; align-items:center;
-  justify-content:center; font-size:24px; }
+.logo { width:46px; height:46px; border-radius:12px; background:#fff; border:1px solid #eef1f6;
+  display:flex; align-items:center; justify-content:center; font-size:24px; position:relative; overflow:hidden; }
+.logo-emoji { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
+.logo-img { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; padding:7px; background:#fff; }
 .card-title h3 { font-size:18px; }
 .card-title .brand { font-size:13px; color:#7b8794; }
 .card-count { margin-left:auto; font-size:13px; color:#2563eb; background:#eef4ff; padding:4px 12px;
@@ -83,7 +85,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
   
     <section class="card">
       <div class="card-header">
-        <div class="logo">🔋</div>
+        <div class="logo"><span class="logo-emoji">🔋</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=jackery.com&sz=128" alt="华宝新能 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>华宝新能</h3>
           <span class="brand">Jackery</span>
@@ -150,7 +152,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
     </section>
     <section class="card">
       <div class="card-header">
-        <div class="logo">⚡</div>
+        <div class="logo"><span class="logo-emoji">⚡</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=ecoflow.com&sz=128" alt="正浩创新 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>正浩创新</h3>
           <span class="brand">EcoFlow</span>
@@ -184,7 +186,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
     </section>
     <section class="card">
       <div class="card-header">
-        <div class="logo">🔌</div>
+        <div class="logo"><span class="logo-emoji">🔌</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=anker.com&sz=128" alt="安克创新 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>安克创新</h3>
           <span class="brand">Anker</span>
@@ -262,7 +264,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
     </section>
     <section class="card">
       <div class="card-header">
-        <div class="logo">☀️</div>
+        <div class="logo"><span class="logo-emoji">☀️</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=sungrowpower.com&sz=128" alt="阳光电源 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>阳光电源</h3>
           <span class="brand">Sungrow</span>
@@ -329,7 +331,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
     </section>
     <section class="card">
       <div class="card-header">
-        <div class="logo">🔋</div>
+        <div class="logo"><span class="logo-emoji">🔋</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=www.pylontech.com.cn&sz=128" alt="派能科技 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>派能科技</h3>
           <span class="brand">Pylontech</span>
@@ -407,7 +409,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
     </section>
     <section class="card">
       <div class="card-header">
-        <div class="logo">🚗</div>
+        <div class="logo"><span class="logo-emoji">🚗</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=tesla.com&sz=128" alt="特斯拉 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>特斯拉</h3>
           <span class="brand">Tesla</span>
@@ -529,7 +531,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
     </section>
     <section class="card">
       <div class="card-header">
-        <div class="logo">🔋</div>
+        <div class="logo"><span class="logo-emoji">🔋</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=lgensol.com&sz=128" alt="LG新能源 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>LG新能源</h3>
           <span class="brand">LG</span>
@@ -563,7 +565,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
     </section>
     <section class="card">
       <div class="card-header">
-        <div class="logo">🌐</div>
+        <div class="logo"><span class="logo-emoji">🌐</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=www.growatt.com&sz=128" alt="古瑞瓦特 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>古瑞瓦特</h3>
           <span class="brand">Growatt</span>
@@ -630,7 +632,7 @@ footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
     </section>
     <section class="card">
       <div class="card-header">
-        <div class="logo">🔆</div>
+        <div class="logo"><span class="logo-emoji">🔆</span><img class="logo-img" src="https://www.google.com/s2/favicons?domain=goodwe.com&sz=128" alt="固德威 logo" loading="lazy" onerror="this.remove()"></div>
         <div class="card-title">
           <h3>固德威</h3>
           <span class="brand">Goodwe</span>
