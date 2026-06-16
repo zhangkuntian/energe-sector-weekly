@@ -55,6 +55,18 @@ header .meta { margin-top:18px; display:inline-flex; gap:18px; flex-wrap:wrap; j
 .inactive h3 { font-size:15px; color:#22c55e; margin-bottom:12px; }
 .chips { display:flex; flex-wrap:wrap; gap:10px; }
 .chip { font-size:13px; color:#cfcfcf; background:#222; padding:5px 14px; border-radius:20px; }
+.github-cta { background:linear-gradient(135deg,#161618 0%,#0d0d0f 100%); border:1px solid #22c55e;
+  border-radius:16px; padding:28px 24px; margin-top:28px; text-align:center; }
+.github-cta h3 { font-size:18px; color:#22c55e; margin-bottom:6px; }
+.github-cta p { font-size:14px; color:#cfcfcf; margin-bottom:18px; }
+.github-cta .btns { display:flex; gap:14px; justify-content:center; flex-wrap:wrap; }
+.gh-btn { display:inline-flex; align-items:center; gap:8px; padding:10px 20px; border-radius:30px;
+  font-size:14px; font-weight:600; text-decoration:none; transition:transform .15s; }
+.gh-btn:hover { transform:translateY(-2px); }
+.gh-btn svg { width:18px; height:18px; fill:currentColor; }
+.gh-star { background:#22c55e; color:#0d0d0f; }
+.gh-issue { background:transparent; color:#22c55e; border:1px solid #22c55e; }
+.github-cta .badge { margin-top:16px; }
 footer { text-align:center; color:#9a9a9a; font-size:12.5px; margin-top:36px; }
 @media (min-width:720px) { .card-body { grid-template-columns:1fr; } }
 </style>
@@ -715,7 +727,27 @@ footer { text-align:center; color:#9a9a9a; font-size:12.5px; margin-top:36px; }
         <h3>📭 本周无动态的竞品</h3>
         <div class="chips"><span class="chip">Enphase · Enphase</span><span class="chip">Sonnen · Sonnen</span><span class="chip">禾迈股份 · Hoymiles</span><span class="chip">SolarEdge · SolarEdge</span></div>
       </section>
+  <section class="github-cta">
+    <h3>⭐ 觉得有用？给个 Star 吧</h3>
+    <p>如果这份周报对你有帮助，欢迎点亮 Star 支持一下；有想法或建议，也可以提个 Issue 一起讨论。</p>
+    <div class="btns">
+      <a class="gh-btn gh-star" href="https://github.com/zhangkuntian/energe-sector-weekly" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25z"/></svg>
+        点亮 Star
+      </a>
+      <a class="gh-btn gh-issue" href="https://github.com/zhangkuntian/energe-sector-weekly/issues/new" target="_blank" rel="noopener">
+        <svg viewBox="0 0 16 16"><path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0z"/></svg>
+        提个 Issue
+      </a>
+    </div>
+    <div class="badge">
+      <a class="github-button" href="https://github.com/zhangkuntian/energe-sector-weekly"
+         data-icon="octicon-star" data-size="large" data-show-count="true"
+         aria-label="Star zhangkuntian/energe-sector-weekly on GitHub">Star</a>
+    </div>
+  </section>
   <footer>本周报由 Dify 工作流自动生成 · 数据来源于公开网络搜索</footer>
 </div>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
