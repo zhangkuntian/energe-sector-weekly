@@ -1,8 +1,728 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head><meta charset="utf-8"><title>测试页</title></head>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>能源行业竞品产品动态周报 · 2026年6月9日</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:#f4f6fb; color:#1f2933; line-height:1.6; }
+.wrap { max-width:1080px; margin:0 auto; padding:0 20px 60px; }
+header { background:linear-gradient(135deg,#2563eb 0%,#1e40af 60%,#1e3a8a 100%); color:#fff;
+  padding:48px 20px 40px; text-align:center; }
+header h1 { font-size:30px; font-weight:700; letter-spacing:1px; }
+header .sub { margin-top:8px; font-size:15px; opacity:.9; }
+header .meta { margin-top:18px; display:inline-flex; gap:18px; flex-wrap:wrap; justify-content:center;
+  font-size:14px; background:rgba(255,255,255,.12); padding:8px 18px; border-radius:30px; }
+.highlights { background:#fff; border-radius:16px; padding:24px 28px; margin:-24px auto 28px;
+  box-shadow:0 8px 24px rgba(30,58,138,.08); position:relative; }
+.highlights h2 { font-size:17px; color:#1e40af; margin-bottom:12px; }
+.highlights ul { list-style:none; }
+.highlights li { position:relative; padding-left:22px; margin:8px 0; font-size:14.5px; }
+.highlights li:before { content:"▸"; position:absolute; left:0; color:#2563eb; font-weight:700; }
+.card { background:#fff; border-radius:16px; margin-bottom:22px; overflow:hidden;
+  box-shadow:0 4px 16px rgba(30,58,138,.06); }
+.card-header { display:flex; align-items:center; gap:14px; padding:18px 24px; border-bottom:1px solid #eef1f6;
+  background:#fafbfe; }
+.logo { width:46px; height:46px; border-radius:12px; background:#eef4ff; display:flex; align-items:center;
+  justify-content:center; font-size:24px; }
+.card-title h3 { font-size:18px; }
+.card-title .brand { font-size:13px; color:#7b8794; }
+.card-count { margin-left:auto; font-size:13px; color:#2563eb; background:#eef4ff; padding:4px 12px;
+  border-radius:20px; font-weight:600; }
+.card-count.muted { color:#9aa5b1; background:#f0f2f5; }
+.card-body { padding:12px 24px 22px; display:grid; grid-template-columns:1fr; gap:6px; }
+.category { padding:14px 0; border-bottom:1px dashed #eef1f6; }
+.category:last-child { border-bottom:none; }
+.cat-title { font-size:15px; margin-bottom:10px; display:flex; align-items:center; gap:8px; }
+.cat-title .count { font-size:12px; color:#9aa5b1; background:#f0f2f5; padding:1px 9px; border-radius:12px; }
+.cat-product .cat-title { color:#059669; }
+.cat-tech .cat-title { color:#2563eb; }
+.cat-biz .cat-title { color:#d97706; }
+.item-list { list-style:none; display:flex; flex-direction:column; gap:12px; }
+.item { background:#fafbfe; border-radius:10px; padding:12px 14px; border-left:3px solid #d7e0ee; }
+.cat-product .item { border-left-color:#34d399; }
+.cat-tech .item { border-left-color:#60a5fa; }
+.cat-biz .item { border-left-color:#fbbf24; }
+.item-head { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
+.item-title { font-weight:600; font-size:14.5px; }
+.date { font-size:12px; color:#fff; background:#94a3b8; padding:1px 8px; border-radius:10px; white-space:nowrap; }
+.cat-product .date { background:#34d399; }
+.cat-tech .date { background:#60a5fa; }
+.cat-biz .date { background:#fbbf24; }
+.date-unknown { background:#cbd5e1 !important; color:#475569 !important; }
+.item-desc { font-size:13.5px; color:#52606d; margin:6px 0 8px; }
+.source { display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:#2563eb;
+  text-decoration:none; }
+.source:hover { text-decoration:underline; }
+.source img { border-radius:3px; }
+.empty { font-size:13px; color:#9aa5b1; padding:4px 0; }
+.inactive { background:#fff; border-radius:16px; padding:20px 24px; box-shadow:0 4px 16px rgba(30,58,138,.06); }
+.inactive h3 { font-size:15px; color:#7b8794; margin-bottom:12px; }
+.chips { display:flex; flex-wrap:wrap; gap:10px; }
+.chip { font-size:13px; color:#7b8794; background:#f0f2f5; padding:5px 14px; border-radius:20px; }
+footer { text-align:center; color:#9aa5b1; font-size:12.5px; margin-top:36px; }
+@media (min-width:720px) { .card-body { grid-template-columns:1fr; } }
+</style>
+</head>
 <body>
-  <h1>GitHub Pages 测试成功 ✅</h1>
-  <p>如果你能看到这行字，说明网址通了。</p>
+<header>
+  <h1>📋 能源行业竞品产品动态周报</h1>
+  <div class="sub">便携储能 / 户用储能</div>
+  <div class="meta">
+    <span>报告日期：2026年6月9日</span>
+    <span>覆盖周期：06.02 - 06.08</span>
+  </div>
+</header>
+<div class="wrap">
+  <section class="highlights">
+    <h2>📌 本周要点</h2>
+    <ul><li>SNEC 2026 集中爆发：固德威、派能科技、古瑞瓦特携全栈储能与 AI 原生能源操作系统亮相</li><li>安克创新递表港交所主板，2025 年总营收超 305 亿元</li><li>特斯拉 4680 电池干法电极技术突破并量产，电极生产成本近乎减半</li><li>阳光电源、派能科技密集申请储能相关专利，聚焦散热与系统安全</li></ul>
+  </section>
+  
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">🔋</div>
+        <div class="card-title">
+          <h3>华宝新能</h3>
+          <span class="brand">Jackery</span>
+        </div>
+        <span class="card-count">4 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">3</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">Jackery HomePower 3600 Plus 促销活动</span>
+            <span class="date">2026-06-04</span>
+          </div>
+          <p class="item-desc">Wellbots 对该款移动储能电站及太阳能套件提供大幅折扣，使用优惠码后最低至 1399 美元。</p>
+          <a class="source" href="https://www.cnet.com/deals/jackery-homepower-3600-plus-generator-and-bundle-deal/" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.cnet.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>cnet.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">Jackery Explorer 2000 V2 史低促销</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">该款便携储能电站在亚马逊迎来 6 折优惠，创下历史新低价格。</p>
+          <a class="source" href="https://www.cnet.com/deals/amazon-deals-of-the-day-june-3-26/" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.cnet.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>cnet.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">Jackery Explorer 1000 露营季促销</span>
+            <span class="date">2026-06-08</span>
+          </div>
+          <p class="item-desc">Amazon 早期 Prime Day 露营优惠活动，Jackery 户外电源等享受最高 40% 折扣。</p>
+          <a class="source" href="https://www.foxnews.com/deals/best-outdoor-and-camping-deals-prime-day" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.foxnews.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>foxnews.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">“充电延长线”专利</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">华宝新能取得名为“充电延长线”的专利，授权公告号为 CN310007753S。</p>
+          <a class="source" href="https://www.sohu.com/a/1031443169_122014422" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.sohu.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>sohu.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">0</span></h4>
+        <p class="empty">📭 本周无相关动态</p>
+      </div></div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">⚡</div>
+        <div class="card-title">
+          <h3>正浩创新</h3>
+          <span class="brand">EcoFlow</span>
+        </div>
+        <span class="card-count">1 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">EcoFlow Delta Pro 便携储能电站</span>
+            <span class="date">2026-06-02</span>
+          </div>
+          <p class="item-desc">Consumer Reports 将其评为最佳便携露营储能电站第一名（测试得分 89/100），支持 AC Level 2 充电桩高达 3400W 输入功率。</p>
+          <a class="source" href="https://www.aol.com/articles/consumer-reports-named-no-1-170000000.html" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.aol.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>aol.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">0</span></h4>
+        <p class="empty">📭 本周无相关动态</p>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">0</span></h4>
+        <p class="empty">📭 本周无相关动态</p>
+      </div></div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">🔌</div>
+        <div class="card-title">
+          <h3>安克创新</h3>
+          <span class="brand">Anker</span>
+        </div>
+        <span class="card-count">5 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">Anker Prime 风冷三合一磁吸无线充电器</span>
+            <span class="date">2026-06-08</span>
+          </div>
+          <p class="item-desc">内置 1.62 英寸触摸屏与 TEC 风冷技术，手机最高支持 25W 充电，首发价 1199 元。</p>
+          <a class="source" href="https://www.gizmochina.com/2026/06/08/anker-launches-air-cooled-3-in-1-wireless-charger-with-built-in-touchscreen/" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.gizmochina.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>gizmochina.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">3</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">姿态估计方法、装置、存储介质及电子设备</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">申请姿态估计专利，利用多传感器数据校正提高姿态估计精确性。</p>
+          <a class="source" href="https://finance.sina.cn/2026-06-03/detail-iniaavwy1006423.d.html" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.cn</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">移动电源的充电控制方法及移动电源</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">申请移动电源充电控制专利，避免无设备接入时长时间轻载运行。</p>
+          <a class="source" href="https://finance.sina.cn/2026-06-03/detail-iniaavwy1006238.d.html" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.cn</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">储能装置以及充放电功率控制方法</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">申请储能装置专利，通过控制充放电功率提高设备运行效率。</p>
+          <a class="source" href="https://www.sohu.com/a/1031400128_122014422" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.sohu.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>sohu.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">向港交所主板提交上市申请</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">递表港交所主板二次上市，中金、高盛、摩根大通为联席保荐人；2025 年总营收超 305 亿元，一季度营收超 76 亿元。</p>
+          <a class="source" href="https://user.guancha.cn/main/content?id=1664205" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=user.guancha.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>user.guancha.cn</span>
+          </a>
+        </li></ul>
+      </div></div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">☀️</div>
+        <div class="card-title">
+          <h3>阳光电源</h3>
+          <span class="brand">Sungrow</span>
+        </div>
+        <span class="card-count">4 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">0</span></h4>
+        <p class="empty">📭 本周无相关动态</p>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">4</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">“储能模块及储能装置”实用新型专利</span>
+            <span class="date">2026-06-05</span>
+          </div>
+          <p class="item-desc">箱体底部开窗设计使液冷板直接暴露，提高散热效率并减少凝露发生概率。</p>
+          <a class="source" href="https://roll.sohu.com/a/1032332102_115377" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=roll.sohu.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>roll.sohu.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">“储能系统及用电装置”实用新型专利</span>
+            <span class="date date-unknown">时间未明确</span>
+          </div>
+          <p class="item-desc">解决储能系统中电芯热失控对周围电芯产生不利影响、造成二次事故的问题。</p>
+          <a class="source" href="https://m.sohu.com/a/1033982936_115377" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=m.sohu.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>m.sohu.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">“储能系统及电池包”专利</span>
+            <span class="date">2026-06-05</span>
+          </div>
+          <p class="item-desc">液冷盖板兼顾多作用，加固结构助电芯散热。</p>
+          <a class="source" href="https://finance.sina.com.cn/stock/aigc/zl/2026-06-06/doc-iniamnzy7804296.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">“电力设备”专利</span>
+            <span class="date">2026-06-06</span>
+          </div>
+          <p class="item-desc">可减少容纳腔内凝露现象，降低电子器件因潮湿导致故障的风险。</p>
+          <a class="source" href="https://finance.sina.com.cn/stock/aigc/zl/2026-06-06/doc-iniamnzu2211912.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">0</span></h4>
+        <p class="empty">📭 本周无相关动态</p>
+      </div></div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">🔋</div>
+        <div class="card-title">
+          <h3>派能科技</h3>
+          <span class="brand">Pylontech</span>
+        </div>
+        <span class="card-count">5 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">全栈储能技术及新品亮相 SNEC 2026</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">展出 Force H3X 家庭一体化储能、Fidus Battery Plus 宽温域电池、ReefMagic 高压堆叠电池及钠电起停电池等覆盖五大场景方案。</p>
+          <a class="source" href="https://mchuneng.in-en.com/html/chunengy-55077.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=mchuneng.in-en.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>mchuneng.in-en.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">3</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">一种储能系统的控制方法</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">申请储能系统控制专利，实现对各单元电压及时钟同步的控制。</p>
+          <a class="source" href="https://www.sohu.com/a/1031441187_122014422" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.sohu.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>sohu.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">电池箱</span>
+            <span class="date">2026-06-06</span>
+          </div>
+          <p class="item-desc">取得电池箱专利，新型结构实现风道与检测区的分隔。</p>
+          <a class="source" href="http://finance.sina.com.cn/stock/aigc/zl/2026-06-06/doc-iniamnzu2212388.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">一种电池箱及储能系统</span>
+            <span class="date">2026-06-06</span>
+          </div>
+          <p class="item-desc">通过挡流构件提升冷却液均温散热效果。</p>
+          <a class="source" href="https://www.sohu.com/a/1032922630_122014422" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.sohu.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>sohu.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">全球服务网络布局升级</span>
+            <span class="date">2026-06</span>
+          </div>
+          <p class="item-desc">已在全球部署 25 个服务中心，覆盖五大洲、辐射 90 余个国家和地区，形成全球本地化服务网络。</p>
+          <a class="source" href="https://mchuneng.in-en.com/html/chunengy-55077.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=mchuneng.in-en.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>mchuneng.in-en.com</span>
+          </a>
+        </li></ul>
+      </div></div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">🚗</div>
+        <div class="card-title">
+          <h3>特斯拉</h3>
+          <span class="brand">Tesla</span>
+        </div>
+        <span class="card-count">9 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">2</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">德国超级工厂出口 Model Y 并提升电池产量</span>
+            <span class="date">2026-06-02</span>
+          </div>
+          <p class="item-desc">克服德国工厂挑战，开始向加拿大出口 Model Y，并提升电池电芯产量。</p>
+          <a class="source" href="https://www.autonews.com/tesla/ane-tesla-germany-qa-batteries-exports-0602/" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.autonews.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>autonews.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">新一代 Roadster 延期亮相</span>
+            <span class="date date-unknown">时间未明确</span>
+          </div>
+          <p class="item-desc">延期至 8 月亮相，融入曾遭 F1 禁用的空气动力学专利技术以优化风阻与稳定性。</p>
+          <a class="source" href="https://h5.ifeng.com/c/vivo/v0023XodHYjvCTVYD0SUndrbPS6rDJLaCZBziDDjMmvAdM0__" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=h5.ifeng.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>h5.ifeng.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">3</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">全景天幕气流优化专利</span>
+            <span class="date date-unknown">时间未明确</span>
+          </div>
+          <p class="item-desc">通过车顶定点抽气与重构空调风道，解决全景天幕暴晒导致的“头顶烤箱”问题。</p>
+          <a class="source" href="https://www.163.com/dy/article/KUISQN930517KD3P.html" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.163.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>163.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">脉冲激光雨刷系统专利</span>
+            <span class="date date-unknown">时间未明确</span>
+          </div>
+          <p class="item-desc">研发脉冲激光系统，未来可通过激光光束清洁挡风玻璃。</p>
+          <a class="source" href="https://www.ddcar.com.tw/article/1005" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.ddcar.com.tw&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>ddcar.com.tw</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">4680 电池干法电极技术突破与量产</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">已在得州工厂量产，复合粘结剂使产线速度提升 3 倍，电极生产成本近乎减半，第二代 4680 已搭载于部分 Model Y。</p>
+          <a class="source" href="https://youjia.baidu.com/view/articleDetail/9189247920247585493" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=youjia.baidu.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>youjia.baidu.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">4</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">中国产电动车 5 月销量增长</span>
+            <span class="date">2026-06-02</span>
+          </div>
+          <p class="item-desc">中国产电动车 5 月销量同比增长 39.4% 至 85,982 辆，实现连续七个月增长。</p>
+          <a class="source" href="https://www.reuters.com/business/autos-transportation/teslas-chinese-made-ev-sales-rise-394-may-2026-06-02/" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.reuters.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>reuters.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">FSD 合同修改引发证据销毁风险</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">被指追溯修改 FSD 购买协议加入“supervised”字样且原合同不可访问，面临证据销毁风险。</p>
+          <a class="source" href="https://www.automotiveworld.com/news/tesla-faces-spoliation-risk-over-altered-fsd-contracts/" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.automotiveworld.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>automotiveworld.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">摩根大通上调评级与目标价</span>
+            <span class="date">2026-06-05</span>
+          </div>
+          <p class="item-desc">评级上调至“中性”，目标价大幅上调，认为自动驾驶和机器人业务将驱动长期增长。</p>
+          <a class="source" href="https://www.reuters.com/business/media-telecom/jp-morgan-upgrades-tesla-neutral-sees-robotics-driving-long-term-growth-2026-06-05/" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.reuters.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>reuters.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">Model Y 登顶澳大利亚月度销量榜</span>
+            <span class="date">2026-06-06</span>
+          </div>
+          <p class="item-desc">成为首款登顶澳大利亚月度销量榜的电动汽车，被视为历史性时刻。</p>
+          <a class="source" href="https://www.skynews.com.au/opinion/historic-moment-tesla-becomes-first-ev-to-top-monthly-sales-charts" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.skynews.com.au&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>skynews.com.au</span>
+          </a>
+        </li></ul>
+      </div></div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">🔋</div>
+        <div class="card-title">
+          <h3>LG新能源</h3>
+          <span class="brand">LG</span>
+        </div>
+        <span class="card-count">1 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">0</span></h4>
+        <p class="empty">📭 本周无相关动态</p>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">先进干法电极工艺</span>
+            <span class="date date-unknown">时间未明确</span>
+          </div>
+          <p class="item-desc">计划在 2025 年底前完成干法电极工艺试点产线建设，展望 2028 年全面量产，预计可降低制造成本 17%-30%。</p>
+          <a class="source" href="https://libattery.net/news/details3060.html" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=libattery.net&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>libattery.net</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">0</span></h4>
+        <p class="empty">📭 本周无相关动态</p>
+      </div></div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">🌐</div>
+        <div class="card-title">
+          <h3>古瑞瓦特</h3>
+          <span class="brand">Growatt</span>
+        </div>
+        <span class="card-count">4 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">2</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">GREW Solar 3.5GW N型 TOPCon 电池产能申请 ALMM 认证</span>
+            <span class="date">2026-06-08</span>
+          </div>
+          <p class="item-desc">申请将印度中央邦 3.5GW TOPCon G12R 太阳能电池产能纳入印度 MNRE 的 ALMM List-II。</p>
+          <a class="source" href="https://www.energetica-india.net/news/grew-solar-seeks-almm-approval-for-3-5-gw-n-type-topcon-cell-capacity" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.energetica-india.net&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>energetica-india.net</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">光伏逆变器与储能系统出货动态</span>
+            <span class="date">2026-06</span>
+          </div>
+          <p class="item-desc">业务覆盖 150+ 国家和地区，光伏逆变器与储能系统累计出货量超 500 万套。</p>
+          <a class="source" href="https://www.cnblogs.com/paihangbang/p/20289035" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.cnblogs.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>cnblogs.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">专利与技术研发布局</span>
+            <span class="date">2025</span>
+          </div>
+          <p class="item-desc">在深圳、惠州及西安设立研发中心，团队超 1100 人；累计获专利超 200 项，其中发明专利 70 项、实用新型 126 项。</p>
+          <a class="source" href="http://www.unicorn500.com" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.unicorn500.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>unicorn500.com</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">与楚能新能源签署战略合作协议</span>
+            <span class="date">2026-05-14</span>
+          </div>
+          <p class="item-desc">与楚能新能源等五家标杆企业签署合作协议，涉及 648Ah、588Ah、314Ah 及 100Ah 户储专用电池，累计订单达 50GWh。</p>
+          <a class="source" href="https://finance.sina.com.cn/roll/2026-06-04/doc-iniafrtq3664484.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li></ul>
+      </div></div>
+    </section>
+    <section class="card">
+      <div class="card-header">
+        <div class="logo">🔆</div>
+        <div class="card-title">
+          <h3>固德威</h3>
+          <span class="brand">Goodwe</span>
+        </div>
+        <span class="card-count">6 条动态</span>
+      </div>
+      <div class="card-body">
+      <div class="category cat-product">
+        <h4 class="cat-title">🆕 产品动态<span class="count">3</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">WE-AI 原生能源操作系统</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">旗下慧电科技全球发布面向新型电力系统的云原生操作系统，具备全域感知、智能决策与持续进化能力。</p>
+          <a class="source" href="https://finance.sina.com.cn/wm/2026-06-04/doc-iniafvzs9312646.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">「擎天」光储充车棚</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">全栈自研六大系统，集成光伏、储能、充电及智慧运维，将普通停车场升级为零碳能源资产。</p>
+          <a class="source" href="https://finance.sina.com.cn/wm/2026-06-04/doc-iniafvzs9312646.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">ET LV＋LynxA 16kWh 小型工商业光储系统</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">推出紧凑高效、灵活部署的小型工商业光储系统，集中亮相 SDT G4、GT G2 等全场景产品矩阵。</p>
+          <a class="source" href="https://finance.sina.com.cn/wm/2026-06-04/doc-iniafvzs9312646.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-tech">
+        <h4 class="cat-title">🔬 技术 / 专利<span class="count">2</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">“一种功率设备、控制方法及光伏系统”专利</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">申请功率设备复合散热结构等相关技术专利。</p>
+          <a class="source" href="https://www.sohu.com/a/1031442408_122014422" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=www.sohu.com&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>sohu.com</span>
+          </a>
+        </li>
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">GT G2 系列光伏逆变器实用新型专利</span>
+            <span class="date">2026-06-04</span>
+          </div>
+          <p class="item-desc">GT G2 系列解锁 BUS 防爆专利与 PV-负对地短路保护两项自主研发核心专利。</p>
+          <a class="source" href="https://finance.sina.com.cn/wm/2026-06-04/doc-iniafvzs9325960.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li></ul>
+      </div>
+      <div class="category cat-biz">
+        <h4 class="cat-title">🏢 企业动态<span class="count">1</span></h4>
+        <ul class="item-list">
+        <li class="item">
+          <div class="item-head">
+            <span class="item-title">SNEC 2026 多项战略合作签约及认证颁发</span>
+            <span class="date">2026-06-03</span>
+          </div>
+          <p class="item-desc">与 OSW 达成全球战略合作，慧电科技与中核汇能浙江公司签约，并获 EUPD Research 双 A+ 品牌评级。</p>
+          <a class="source" href="https://finance.sina.com.cn/wm/2026-06-04/doc-iniafvzs9312646.shtml" target="_blank" rel="noopener">
+            <img src="https://www.google.com/s2/favicons?domain=finance.sina.com.cn&sz=32" alt="" width="16" height="16" loading="lazy">
+            <span>finance.sina.com.cn</span>
+          </a>
+        </li></ul>
+      </div></div>
+    </section>
+  
+      <section class="inactive">
+        <h3>📭 本周无动态的竞品</h3>
+        <div class="chips"><span class="chip">Enphase · Enphase</span><span class="chip">Sonnen · Sonnen</span><span class="chip">禾迈股份 · Hoymiles</span><span class="chip">SolarEdge · SolarEdge</span></div>
+      </section>
+  <footer>本周报由 Dify 工作流自动生成 · 数据来源于公开网络搜索</footer>
+</div>
 </body>
 </html>
